@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# exit on error
+set -e
+
+# get the source code
+git clone --branch main --depth 1 https://github.com/osgeo/grass.git grass-src
+#git clone --branch master --depth 1 https://github.com/vatlab/sos-notebook.git sos-notebook
+
+# enter directory with source code
+cd grass
+
+# compile
+./configure \
+    --enable-largefile=yes \
+    --with-nls \
+    --with-cxx \
+    --with-readline \
+    --with-bzlib \
+    --with-pthread \
+    --with-proj-share=/usr/share/proj \
+    --with-geos=/usr/bin/geos-config \
+    --with-cairo \
+    --with-opengl-libs=/usr/include/GL \
+    --with-freetype=yes --with-freetype-includes="/usr/include/freetype2/" \
+    --with-sqlite=yes
+make
+
+# leave the directory with source code
+#cd ..
+
+# put command on path
+# ensure the user specific bin dir exists (already on path)
+mkdir -p $HOME/.local/bin/
+# create link to build
+ln -s $HOME/grass-src/bin.*/grass* $HOME/.local/bin/grass
+#ln -s $HOME/sos-notebook/bin.*/sos-notebook* $HOME/.local/bin/sos-notebook
+
+# download TUTORIAL sample dataset
+#mkdir -p testdata \
+#  && curl -SL https://github.com/ImmediateStranger/soybeans/blob/main/data/EX1.shp \
