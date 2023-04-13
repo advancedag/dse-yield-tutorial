@@ -5,4 +5,4 @@ https://mybinder.org/v2/gh/ImmediateStranger/DallasOnJupyter/HEAD
 
 
 
-[![alt text](https://moodle-projects.wolfware.ncsu.edu/pluginfile.php/2093655/course/section/213186/pexels-tom-fisk-photo.jpg)]
+[![alt text](https://github.com/advancedag/dse-yield-tutorial/blob/main/img/pexels-tom-fisk-555px.jpg)]
