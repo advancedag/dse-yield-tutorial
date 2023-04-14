@@ -4,7 +4,7 @@
 set -e
 
 # get the source code
-git clone --branch main --depth 1 https://github.com/osgeo/grass.git grass-src
+git clone --branch main --depth 1 https://github.com/immediatestranger/grass.git grass
 
 
 # enter directory with source code
@@ -23,7 +23,8 @@ cd grass-src
     --with-cairo \
     --with-opengl-libs=/usr/include/GL \
     --with-freetype=yes --with-freetype-includes="/usr/include/freetype2/" \
-    --with-sqlite=yes
+    --with-sqlite=yes \
+    --without-pdal
 make
 
 # leave the directory with source code
@@ -33,7 +34,7 @@ cd ..
 # ensure the user specific bin dir exists (already on path)
 mkdir -p $HOME/.local/bin/
 # create link to build
-ln -s $HOME/grass-src/bin.*/grass* $HOME/.local/bin/grass
+ln -s $HOME/grass/bin.*/grass* $HOME/.local/bin/grass
 
 
 # download TUTORIAL sample dataset
