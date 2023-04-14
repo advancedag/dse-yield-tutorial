@@ -8,7 +8,7 @@ git clone --branch main --depth 1 https://github.com/immediatestranger/grass.git
 
 
 # enter directory with source code
-cd grass-src
+cd grass
 
 # compile
 ./configure \
