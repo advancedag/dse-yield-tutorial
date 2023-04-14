@@ -5,10 +5,10 @@ set -e
 
 # get the source code
 git clone --branch main --depth 1 https://github.com/osgeo/grass.git grass-src
-#git clone --branch master --depth 1 https://github.com/vatlab/sos-notebook.git sos-notebook
+
 
 # enter directory with source code
-cd grass
+cd grass-src
 
 # compile
 ./configure \
@@ -27,15 +27,15 @@ cd grass
 make
 
 # leave the directory with source code
-#cd ..
+cd ..
 
 # put command on path
 # ensure the user specific bin dir exists (already on path)
 mkdir -p $HOME/.local/bin/
 # create link to build
 ln -s $HOME/grass-src/bin.*/grass* $HOME/.local/bin/grass
-#ln -s $HOME/sos-notebook/bin.*/sos-notebook* $HOME/.local/bin/sos-notebook
+
 
 # download TUTORIAL sample dataset
 #mkdir -p testdata \
-#  && curl -SL https://github.com/ImmediateStranger/soybeans/blob/main/data/EX1.shp \
+#  && curl -SL https://www.com/abc/123/xfiles \
