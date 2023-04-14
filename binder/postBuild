@@ -4,7 +4,7 @@
 set -e
 
 # get the source code
-git clone --branch main --depth 1 https://github.com/immediatestranger/grass.git grass
+git clone --branch main --depth 1 https://github.com/immediatestranger/grassfork.git grass
 
 
 # enter directory with source code
