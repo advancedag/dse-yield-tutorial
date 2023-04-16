@@ -6,6 +6,9 @@ set -e
 # install sos
 python3 -m sos_notebook.install
 
+# install bash kernel
+python -m bash_kernel.install
+
 # get the source code
 git clone --branch main --depth 1 https://github.com/immediatestranger/grassfork.git grass
 

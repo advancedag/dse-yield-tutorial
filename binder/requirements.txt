@@ -7,8 +7,8 @@ PyVirtualDisplay
 rise
 jupyter_contrib_core
 sos
+sos-notebook
 sos-pbs
 sos-r
 sos-bash
 sos-python
-sos-notebook
