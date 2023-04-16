@@ -5,6 +5,7 @@ Pillow
 ply
 PyVirtualDisplay
 rise
+jupyter_contrib_core
 sos
 sos-pbs
 sos-r
