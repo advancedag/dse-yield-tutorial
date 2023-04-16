@@ -10,3 +10,5 @@ DataFrames
 NamedArrays
 grass
 rise
+sos
+sos-notebook
