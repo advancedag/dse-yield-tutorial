@@ -4,10 +4,6 @@ numpy
 Pillow
 ply
 PyVirtualDisplay
-PyPlot
-Feather
-DataFrames
-NamedArrays
 rise
 sos
 sos-pbs
