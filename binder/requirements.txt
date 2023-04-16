@@ -8,7 +8,10 @@ PyPlot
 Feather
 DataFrames
 NamedArrays
-grass
 rise
 sos
+sos-pbs
+sos-r
+sos-bash
+sos-python
 sos-notebook
