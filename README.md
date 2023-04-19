@@ -12,11 +12,11 @@ I'm separating Grassyieldwork NB to its own repo so that it can load with full G
 
 ## Tech Specs
 ### For others nerds out there!
-If you have experience with JupyterLab/JupyterNotebooks, you will be familliar with the one-notebook-one-kernel environment.
+If you have experience with JupyterLab/JupyterNotebooks, you will be familliar with the one-notebook-one-kernel environment.<br>
 "YieldworkeR" sees that o-n-o-k, and raises One-Notebook-AllThe-Kernels.
 
 Orly? 
-  - your immediate thought probably
+  -your immediate thought probably
   
 YieldworkeR: Yep. I'm down with S-O-S!
 : ...
