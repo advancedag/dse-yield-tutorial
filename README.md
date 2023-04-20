@@ -18,6 +18,3 @@ If you have experience with JupyterLab/JupyterNotebooks, you will be familliar w
 Orly? 
   -your immediate thought probably
   
-YieldworkeR: Yep. I'm down with S-O-S!
-: ...
-YieldworkeR: ok so it's called Script of Scripts...
